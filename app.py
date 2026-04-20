@@ -19,7 +19,7 @@ def resume():
 def download_resume():
     return send_from_directory(
         directory="static/files",
-        path="Harsh_Shinde_Resume_v2.pdf",
+        path="Harsh_Shinde_Resume_V2.pdf",
         as_attachment=True,
         download_name="Harsh_Shinde_Resume.pdf"
     )

@@ -18,14 +18,15 @@ def resume():
     return render_template("resume.html")
 
 
+    )
 @app.route("/download-resume")
 def download_resume():
     return send_from_directory(
         directory="static/files",
-        path="Harsh_Shinde_Resume.pdf",
-        as_attachment=True
+        path="Harsh_Shinde_Resume_V2.pdf",
+        as_attachment=True,
+        download_name="Harsh_Shinde_Resume.pdf"
     )
-
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
